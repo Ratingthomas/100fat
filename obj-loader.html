@@ -51,8 +51,10 @@
     light.position.set(10, 5, 5)
     scene.add(light)
 
+    var obj = "";
+
     function loadtavel(){
-        loader.load(
+        obj = loader.load(
             // resource URL
             'assets/objtest.obj',
             // called when resource is loaded
@@ -76,7 +78,8 @@
         );
     }
 
-    
+    const obj4 = new Object();
+
     loader.load(
         // resource URL
         'assets/untitled.obj',
@@ -85,6 +88,7 @@
 
             scene.add( object );
             object.translateY( 10 );
+            obj4 = object;
         },
         // called when loading is in progresses
         function ( xhr ) {
@@ -100,9 +104,11 @@
         }
     );
     renderer.setClearColor( 0xffffff, 0);
-    
-    function removeLoad(){
+        
+    obj4.visibility = false
 
+    function removeLoad(obj4){
+        obj4.visibility = false
     }
 
     // renderer.physicallyCorrectLights = true
@@ -118,7 +124,7 @@
     };
     var obj2 = {
         add: function() {
-            removeLoad()
+            removeLoad(obj4)
         }
     };
 
