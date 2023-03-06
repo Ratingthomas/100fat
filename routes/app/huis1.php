@@ -30,8 +30,8 @@
 <script type="importmap">
   {
     "imports": {
-      "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
-      "three/addons/": "https://unpkg.com/three@0.149.0/examples/jsm/"
+      "three": "https://prod-cdn.kruimeltaart.eu/admin/Code/three.module.js",
+      "three/addons/": "https://prod-cdn.kruimeltaart.eu/admin/Code/jsm/"
     }
   }
 </script>
