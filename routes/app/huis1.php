@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Huis 1</title>
 </head>
 <style>
     <?php
@@ -53,17 +53,11 @@
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
 
-	// const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-	// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-	// const cube = new THREE.Mesh( geometry, material );
-	// scene.add( cube );
-
 	camera.position.z = 300;
 	camera.position.y = 80;
 	camera.position.x = 100;
 
     const light = new THREE.SpotLight()
-    // const light = new THREE.AmbientLight( 0x404040 );
     light.position.set(350, 340, 170)
     scene.add(light)
 
@@ -126,12 +120,8 @@
         console.log("Hi")
     }
 
-    // renderer.physicallyCorrectLights = true
-    // renderer.shadowMap.enabled = true
     renderer.outputEncoding = THREE.sRGBEncoding
     
-
-    // texture.encoding = THREE.sRGBEncoding;
     var obj = {
         add: function() {
             loadtavel();
@@ -143,14 +133,8 @@
         }
     };
 
-    
-
 	function animate() {
 		requestAnimationFrame( animate );
-
-		// cube.rotation.x += 0.01;
-		// cube.rotation.y += 0.01;
-
 		renderer.render( scene, camera );
 	};
 

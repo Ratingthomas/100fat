@@ -12,17 +12,7 @@
     ?>
 </style>
 <body>
-    <!-- <div class="huis-nav">
-        <a href="../home" class="huis-a-back">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="36" height="26" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M18 6l-12 12"></path>
-                <path d="M6 6l12 12"></path>
-            </svg>
-        </a>
-        <p class="huis-title">Huis 1</p>
-    </div> -->
-    
+
 </body>
 
 <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>

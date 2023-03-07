@@ -36,12 +36,16 @@ body {
 }
 
 .main-a{
-    width: 150px;
-    height: 150px;
     background-color: var(--wit);
     display: inline-block;
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 75px;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .huis-title{

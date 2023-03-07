@@ -16,18 +16,13 @@
         Stel je huis samen.
     </p>
 
-    <p class="main-under">Selecteer een huis om te beginnen.</p>
+    <p class="main-under">Klik op start om te beginnnen.</p>
 
     <div class="a-container">
         <a href="app/huis1" class="main-a">
-            a
+            Start
         </a>
-        <a href="app/huis1" class="main-a">
-            b
-        </a>
-        <a href="app/huis1" class="main-a">
-            c
-        </a>
+        
     </div>
     
 </body>
