@@ -64,3 +64,22 @@ body {
 .huis-nav{
     padding: 20px;
 }
+
+.credits-div{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-small{
+    color: var(--wit);
+    text-decoration: none;
+}
+
+.main-small:hover{
+    text-decoration: underline;
+}
+
+.credit-link{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}

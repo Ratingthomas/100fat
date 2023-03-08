@@ -13,19 +13,14 @@
 </style>
 <body>
     <p class="main-title">
-        Stel je huis samen.
+        Credits.
     </p>
 
-    <p class="main-under">Klik op start om te beginnnen.</p>
+    <p class="main-under">Ontwikkeld door: <a class="credit-link" href="https://kruimeltaart.eu">Thomas</a>.</p>
+    <p class="main-under">3D modellen door: Sem Ter Steege.</p>
 
-    <div class="a-container">
-        <a href="app/huis1" class="main-a">
-            Start
-        </a>
-
-    </div>
     <div class="credits-div">
-        <a href="credits" class="main-small">Credits</a>
+        <a href="home" class="main-small">Sluiten</a>
     </div>
     
 </body>
