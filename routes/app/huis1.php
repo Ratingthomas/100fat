@@ -20,7 +20,7 @@
                 <path d="M6 6l12 12"></path>
             </svg>
         </a>
-        <p class="huis-title">Huis 1</p>
+        <p class="huis-title"></p>
     </div>
     
 </body>
@@ -43,6 +43,7 @@
     import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
     const scene = new THREE.Scene();
+    THREE.ColorManagement.enabled = true;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });;
 	const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -61,18 +62,24 @@
     light.position.set(350, 340, 170)
     scene.add(light)
 
+    const color3 = new THREE.Color("rgb(255, 255, 0)");
+
+    renderer.outputEncoding = THREE.sRGBEncoding;
+
+
     var obj_test;
 
     function loadtavel(){
         loader.load(
             // resource URL
-            '../assets/objtest.obj',
+            '../assets/deur/deur.obj',
             // called when resource is loaded
             function ( object ) {
 
                 obj_test = object
                 scene.add( obj_test );
                 // object.translateZ( 10 );
+                // obj_test.material.color.set(0xFFB6C1);
             },
             // called when loading is in progresses
             function ( xhr ) {
@@ -84,7 +91,7 @@
             function ( error ) {
 
                 console.log( 'An error happened' );
-
+                console.log(error)
             }
         );
     }
@@ -138,11 +145,13 @@
 		renderer.render( scene, camera );
 	};
 
+
 	animate();
     const gui = new GUI()
     const cubeFolder = gui.addFolder('Cube')
     cubeFolder.add(obj, 'add').name('Load!');
     cubeFolder.add(obj2, 'add').name('Unload!');
     cubeFolder.open()
+
 </script>
 </html>
