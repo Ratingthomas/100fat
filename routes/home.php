@@ -10,6 +10,13 @@
     <?php
         include 'assets/css/style.css';
     ?>
+    body{
+        background-image: url("assets/img/achtergrond.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 </style>
 <body>
     <p class="main-title">
